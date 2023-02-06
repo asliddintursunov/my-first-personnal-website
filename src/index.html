@@ -7,35 +7,56 @@
     <title>Document</title>
     <link href="/dist/output.css" rel="stylesheet">
 </head>
-<body class="m-0 p-0 h-full select-none">
-    <nav class="flex justify-between text-white
-                h-fit items-center py-7 bg-gradient-to-br from-violet-700 to-white">
-        <p class="ml-6 grow text-3xl font-mono font-black tracking-wider text-white">_farkhodovich</p>
+<body class="m-0 p-0 h-[2000px] select-none">
+    <nav class="flex flex-col h-fit bg-gradient-to-br from-violet-700 w-full">
+        <div class="flex justify-between text-white items-center py-7">
+            <p class="ml-6 grow text-3xl font-mono font-black tracking-wider max-[860px]:text-2xl">TA_website</p>
 
-        <div class="flex flex-row mr-6 items-center grow justify-end">
-            <label class="mr-10 text-6xl whitespace-pre-line absolute min-[860px]:hidden " id="label">
-                <p class="leading-[8px] relative bottom-9 cursor-pointer hover:text-purple-400">
-                   _
-                   _
-                   _
-                </p>
-            </label>
-            <ul class="flex flex-row space-x-1 grow justify-between max-[860px]:hidden" id="ulElement">
-                <li class="border-solid border-sky-500 px-10 py-4 rounded-full text-lg font-bold hover:bg-gradient-to-b from-sky-400 to-sky-300 cursor-pointer">
+            <div class="flex flex-row mr-6 items-center grow justify-end">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[40px] h-[40px] min-[860px]:hidden mr-8 hover:stroke-purple-600/70 duration-500 cursor-pointer hover:rotate-180 hover:duration-500" id="hamburger">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[40px] h-[40px] min-[860px]:hidden mr-8 hover:stroke-purple-600/70 duration-500 cursor-pointer hover:rotate-180 hover:duration-500 hidden" id="close_remark">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+
+                <ul class="flex flex-row space-x-1 grow justify-between max-[860px]:hidden" id="ulElement">
+                    <li class="border-solid border-sky-500 px-10 py-4 rounded-2xl text-lg font-bold hover:shadow-[inset_1px_5px_10px] hover:shadow-purple-500 cursor-pointer hover:text-black duration-1000">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="border-solid border-sky-500 px-10 py-4 rounded-2xl text-lg font-bold hover:shadow-[inset_1px_5px_10px] hover:shadow-purple-500 cursor-pointer hover:text-black duration-1000">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="border-solid border-sky-500 px-10 py-4 rounded-2xl text-lg font-bold hover:shadow-[inset_1px_5px_10px] hover:shadow-purple-500 cursor-pointer hover:text-black duration-1000">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="border-solid border-sky-500 px-10 py-4 rounded-2xl text-lg font-bold hover:shadow-[inset_1px_5px_10px] hover:shadow-purple-500 cursor-pointer hover:text-black duration-1000">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+        <div class="min-[860px]:hidden hidden" id="bottom_navbar">
+            <ul class="flex flex-col duration-1000 text-center">
+                <li class="border-solid py-4 text-lg font-bold hover:bg-purple-500/60 cursor-pointer text-white duration-700">
                     <a href="#home">Home</a>
                 </li>
-                <li class="border-solid border-sky-500 px-10 py-4 rounded-full text-lg font-bold hover:bg-gradient-to-b from-sky-400 to-sky-300 cursor-pointer">
+                <li class="border-solid py-4 text-lg font-bold hover:bg-purple-400/50 cursor-pointer text-white duration-700">
                     <a href="#about">About</a>
                 </li>
-                <li class="border-solid border-sky-500 px-10 py-4 rounded-full text-lg font-bold hover:bg-gradient-to-b from-sky-400 to-sky-300 cursor-pointer">
+                <li class="border-solid py-4 text-lg font-bold hover:bg-purple-400/50 cursor-pointer text-white duration-700">
                     <a href="#projects">Projects</a>
                 </li>
-                <li class="border-solid border-sky-500 px-10 py-4 rounded-full text-lg font-bold hover:bg-gradient-to-b from-sky-400 to-sky-300 cursor-pointer">
+                <li class="border-solid py-4 text-lg font-bold hover:bg-purple-400/50 cursor-pointer text-white duration-700">
                     <a href="#contact">Contact</a>
                 </li>
             </ul>
-        </div>   
-
+        </div>  
     </nav>
+    <section>
+        Hello world
+    </section>
+    
+    <script src="/dist/output.js"></script>
 </body>
 </html>
