@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
     <link href="/dist/output.css" rel="stylesheet">
 </head>
 <body class="m-0 p-0 h-[2000px] select-none">
-    <nav class="flex flex-col h-fit bg-gradient-to-br from-violet-700 w-full">
+    <nav class="flex flex-col h-fit bg-gradient-to-br from-violet-700 to-white w-full">
         <div class="flex justify-between text-white items-center py-7">
             <p class="ml-6 grow text-3xl font-mono font-black tracking-wider max-[860px]:text-2xl">TA_website</p>
 
@@ -36,8 +36,8 @@
                 </ul>
             </div> 
         </div>
-        <div class="min-[860px]:hidden hidden" id="bottom_navbar">
-            <ul class="flex flex-col duration-1000 text-center">
+        <div class="min-[860px]:hidden hidden bg-gradient-to-br from-violet-700/30 to-white/30" id="bottom_navbar">
+            <ul class="flex flex-col duration-1000 text-center" id="ulElement-mobile">
                 <li class="border-solid py-4 text-lg font-bold hover:bg-purple-500/60 cursor-pointer text-white duration-700">
                     <a href="#home">Home</a>
                 </li>
@@ -53,8 +53,45 @@
             </ul>
         </div>  
     </nav>
-    <section>
-        Hello world
+    <section id="home" class="w-full h-full flex justify-center bg-gradient-to-r from-violet-700/60 to-white/60">
+        <div class="w-full h-fit bg-no-repeat bg-cover bg-top bg-fixed bg-[url('/images/luxa.org-opacity-changed-me_in_red_shirt.webp');] min-[860px]:w-[98%] min-[860px]:my-4 min-[860px]:rounded-3xl max-[860px]:w-[96%] max-[860px]:my-2 max-[860px]:rounded-xl flex justify-around max-[860px]:flex-col space-x-6 max-[860px]:items-center flex-row-reverse pb-10">
+            <div class="m-6 min-[860px]:h-fit min-[860px]:w-[40%] max-[860px]:w-[70%] flex">
+                <img src="/images/MyPhoto.jpg" class=" max-[860px]:rounded-[40px] max-[860px]:shadow-[0_0_30px] shadow-gray-600 min-[860px]:rounded-[40px] min-[860px]:shadow-[5px_5px_30px] min-[1200px]:w-5/6 min-[1400px]:w-3/4">
+            </div>
+            <div class="grow flex flex-col items-center font-mono">
+                <div class="flex flex-col items-center">
+                    <div class="flex space-x-[20px] align-middle">
+                        <strong class="text-[35px]">Hello World!</strong>
+                        <i class="text-[30px] pt-1 text-gray-700">I am</i>
+                    </div>
+                    <div class="flex space-x-2 items-center">
+                        <strong class="text-[58px] underline underline-offset-4 decoration-2 decoration-purple-600/90 italic decoration-double text-gray-700">Developer</strong>
+                        <span class="text-[54px] font-thin text-purple-600/90">|</span>
+                    </div>
+                    <div class="w-[370px] max-[860px]:w-4/5 flex flex-col mt-6">
+                        <div>
+                            <h1 class="text-2xl tracking-widest">
+                                Hi, I am Tursunov Asliddin who <span class="text-red-700 underline">really</span> wants to become software engineer <span class="text-purple-700 ">as soon as possiable</span> and I am trying to do my best on this way. I want to work as a <span class="font-bold text-purple-700 underline ">Fronend Developer</span> in the future!
+                            </h1>
+                        </div>
+                        <div class="flex flex-row space-x-2 animate-bounce mt-4 justify-center items-center p-4 border-dashed border-2 border-purple-600 rounded-lg hover:border-white hover:bg-purple-500/90 duration-[400ms] cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 stroke-indigo-600  hover:stroke-amber-100 duration-[400ms]">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <h1 class="text-xl text-indigo-600 whitespace-nowrap hover:text-white duration-[400ms] cursor-pointer">My number: +99890 373 77 13</h1>
+                        </div>  
+                    </div>
+                </div>
+                <div class="flex flex-row space-x-3 mt-4 tracking-normal font-bold text-lg min-[860px]:justify-end max-[860px]:justify-center text-white">
+                    <button class="py-3 px-6 border-solid box-border border-2 border-purple-600 rounded-lg hover:bg-slate-700/80 hover:border-white bg-slate-700/80 duration-300 hover:shadow-[inset_2px_5px_10px] hover:shadow-slate-900">
+                        <a href="1.pdf" download>Download CV</a>
+                    </button>
+                    <button class="py-3 px-6 border-solid box-border border-2 border-purple-600 rounded-lg hover:bg-purple-700/80 hover:border-white  bg-purple-700/80 duration-300 hover:shadow-[inset_2px_5px_10px] hover:shadow-purple-900">
+                        <a href="https://t.me/farkhodovich_04" target="_blank">Contact Me</a>
+                    </button>
+                </div>
+            </div>
+        </div>
     </section>
     
     <script src="/dist/output.js"></script>
