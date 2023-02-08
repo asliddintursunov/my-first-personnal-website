@@ -22,3 +22,6 @@
 #interests, #education, #interests_stroke, #education_stroke, #interests_ul, #education_ul{
     transition: all 0.5s;
 }
+#pElement_weatherApp, #pElement_NumberGuessingGame, #pElement_TipCalculator{
+    font-family: cursive;
+}
