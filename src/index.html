@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/style.css">
 </head>
 <body class="m-0 p-0 h-[2000px] select-none">
     <nav class="flex flex-col h-fit bg-gradient-to-br from-violet-700 to-white w-full">
@@ -53,7 +54,7 @@
             </ul>
         </div>  
     </nav>
-    <section id="home" class="w-full h-full flex justify-center bg-gradient-to-r from-violet-700/60 to-white/60">
+    <section id="home" class="w-full h-fit flex justify-center bg-gradient-to-r from-violet-700/60 to-white/60">
         <div class="w-full h-fit bg-no-repeat bg-cover bg-top bg-fixed bg-[url('/images/luxa.org-opacity-changed-me_in_red_shirt.webp');] min-[860px]:w-[98%] min-[860px]:my-4 min-[860px]:rounded-3xl max-[860px]:w-[96%] max-[860px]:my-2 max-[860px]:rounded-xl flex justify-around max-[860px]:flex-col space-x-6 max-[860px]:items-center flex-row-reverse pb-10">
             <div class="m-6 min-[860px]:h-fit min-[860px]:w-[40%] max-[860px]:w-[70%] flex">
                 <img src="/images/MyPhoto.jpg" class=" max-[860px]:rounded-[40px] max-[860px]:shadow-[0_0_30px] shadow-gray-600 min-[860px]:rounded-[40px] min-[860px]:shadow-[5px_5px_30px] min-[1200px]:w-5/6 min-[1400px]:w-3/4">
@@ -83,17 +84,87 @@
                     </div>
                 </div>
                 <div class="flex flex-row space-x-3 mt-4 tracking-normal font-bold text-lg min-[860px]:justify-end max-[860px]:justify-center text-white">
-                    <button class="py-3 px-6 border-solid box-border border-2 border-purple-600 rounded-lg hover:bg-slate-700/80 hover:border-white bg-slate-700/80 duration-300 hover:shadow-[inset_2px_5px_10px] hover:shadow-slate-900">
+                    <button class="flex flex-row space-x-2 py-3 px-6 border-solid box-border border-2 border-purple-600 rounded-lg hover:bg-slate-700/80 hover:border-white bg-slate-700/80 duration-300 hover:shadow-[inset_2px_5px_10px] hover:shadow-slate-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
                         <a href="1.pdf" download>Download CV</a>
                     </button>
-                    <button class="py-3 px-6 border-solid box-border border-2 border-purple-600 rounded-lg hover:bg-purple-700/80 hover:border-white  bg-purple-700/80 duration-300 hover:shadow-[inset_2px_5px_10px] hover:shadow-purple-900">
+                    <button class="flex flex-row space-x-3 py-3 px-6 border-solid box-border border-2 border-purple-600 rounded-lg hover:bg-purple-700/80 hover:border-white  bg-purple-700/80 duration-300 hover:shadow-[inset_2px_5px_10px] hover:shadow-purple-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                          </svg>                          
                         <a href="https://t.me/farkhodovich_04" target="_blank">Contact Me</a>
                     </button>
                 </div>
             </div>
         </div>
     </section>
-    
+    <section id="about" class="w-full h-fit flex flex-row bg-gradient-to-r from-violet-700/60 to-white/60 
+    max-[860px]:flex-col items-center pb-6">
+        <div class="w-[98%] flex flex-col py-4 m-4 h-fit grow max-[860px]:grow max-[860px]:flex-row max-[860px]:justify-center max-[860px]:items-start
+        font-mono items-center justify-center border-dashed rounded-xl hover:bg-purple-900/60 hover:border-2 hover:border-purple-600 duration-500 cursor-pointer" id="section-2-img-container">
+            <div class="max-[860px]:h-[200px] max-[860px]:w-[200px] min-[860px]:w-[300px] min-[860px]:h-[300px] h-fit w-fit pb-4 max-[500px]:w-[150px] max-[500px]:h-[150px]">
+                <img src="/images/img-avatar.png" class="rounded-[70%]">
+            </div>
+            <div class="flex flex-col max-[860px]:mt-5 max-[500px]:m-0 ">
+                <div class="h-fit w-fit pb-4">
+                    <strong id="strong" class="text-2xl max-[860px]:text-lg max-[500px]:text-[15px] text-gray-900">Tursunov Asliddin Farkhodovich</strong>
+                </div>
+                <div class="h-fit w-fit pb-4">
+                    <h1 class="text-2xl max-[860px]:text-[15px] max-[500px]:text-[14px] text-slate-600 font-semibold" id="h1-1">|Frontend Developer|</h1>
+                </div>
+                <div class="h-fit w-fit pb-4 text-violet-700">
+                    <h1 class="max-[860px]:text-[15px] max-[500px]:text-[12px]" id="h1-2">&#x2022; Uzbekistan Primate Center</h1>
+                    <h1 class="max-[860px]:text-[15px] max-[500px]:text-[12px]" id="h1-3">&#x2022; IMPRS for Software Engineering</h1>
+                    <h1 class="max-[860px]:text-[15px] max-[500px]:text-[12px]" id="h1-4">&#x2022; University of IUT</h1>
+                </div>
+            </div>
+        </div>
+        <div class="flex w-[94%] flex-col grow-[2] max-[860px]:grow items-center mr-4 ">
+            <div class="text-center">
+                <div class="max-[860px]:text-4xl text-3xl tracking-widest font-mono">
+                    About Me
+                </div>
+                <div class="text-center text-lg font-medium">
+                    My name is Asliddin (Asl) Tursunov and I'm a Senior Frontend Developer at <span class="text-green-800 font-[600] underline mx-1">EPAM</span>Company. I hava 6 years experience on <span class="text-red-700 font-semibold">__________</span> and 2 year experience on <span class="text-red-700 font-semibold">__________</span>. 
+                </div>
+            </div>
+            <div class="flex max-[860px]:flex-col flex-row place-self-center mt-6 space-x-4">
+                <div class="flex flex-col grow border-2 border-dashed border-white p-1 cursor-pointer  hover:bg-purple-900/60 duration-500 rounded-lg " id="interests-container">
+                    <h1 class="text-2xl font-mono font-bold text-white min-[860px]:text-[20px]" id="interests">Interests:</h1>
+                    <div class="flex flex-row">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 stroke-white" id="interests_stroke">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+                        </svg>
+                        <ul class="ml-2 text-lg text-violet-800 min-[860px]:text-[15px]" id="interests_ul">
+                            <li>&#x2022; Building Website</li>
+                            <li>&#x2022; Reading Scientific Books</li>
+                            <li>&#x2022; Playing VR Games</li>
+                        </ul>  
+                    </div> 
+                </div>
+                <div class="flex flex-col grow max-[860px]:mt-4 border-2 border-dashed border-white p-1  hover:bg-purple-900/60 duration-500 rounded-lg cursor-pointer" id="education-container">
+                    <h1 class="text-2xl font-mono font-bold text-white min-[860px]:text-[20px] cursor-pointer" id="education">Education:</h1>
+                    <div class="flex flex-row">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 stroke-white" id="education_stroke">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                          </svg>
+                          
+                        <ul class="ml-2 text-lg text-violet-800 min-[860px]:text-[15px]" id="education_ul">
+                            <li>&#x2022; IHT High-School (2020-2022)</li>
+                            <li>&#x2022; IUT University (2022-2026)</li>
+                            <li>&#x2022; SMEON Magister (2026-2028)</li>
+                        </ul>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="w-full h-fit flex bg-gradient-to-r from-violet-700/60 to-white/60 
+    max-[860px]:flex-col items-center pb-6">
+        
+    </section>
     <script src="/dist/output.js"></script>
 </body>
 </html>

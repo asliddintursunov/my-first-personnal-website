@@ -1,0 +1,24 @@
+#section-2-img-container:hover #h1-1,
+#section-2-img-container:hover #h1-2,
+#section-2-img-container:hover #h1-3,
+#section-2-img-container:hover #h1-4{
+    color: white;
+    transition: all 0.5s;
+}
+#section-2-img-container:hover #strong{
+    color: skyblue;
+    transition: all 0.5s;
+}
+#interests-container:hover #interests, #education-container:hover #education{
+    --tw-text-opacity: 1;
+    color: rgb(91 33 182 / var(--tw-text-opacity));
+}
+#interests-container:hover #interests_stroke, #education-container:hover #education_stroke{
+    stroke: rgb(91, 33, 182);
+}
+#interests-container:hover #interests_ul, #education-container:hover #education_ul{
+    color: white;
+}
+#interests, #education, #interests_stroke, #education_stroke, #interests_ul, #education_ul{
+    transition: all 0.5s;
+}
